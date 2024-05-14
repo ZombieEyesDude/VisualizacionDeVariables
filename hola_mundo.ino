@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-// Dirección I2C del display
+// Dirección I2C del display 
 #define I2C_ADDR 0x27
 
 // Número de columnas y filas del display
@@ -20,7 +20,7 @@ void setup() {
 
   // Imprimimos "Hola Mundo" en la primera fila
   lcd.setCursor(0, 0);
-  lcd.print("Hola Mundo!");
+  lcd.print("Hola Mundo!!!");
 }
 
 void loop() {
