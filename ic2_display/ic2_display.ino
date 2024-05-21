@@ -25,7 +25,7 @@ void loop() {
   int valor = analogRead(A0);
 
   // Convierte el valor a un porcentaje (entre 0 y 100)
-  int porcentaje = map(valor, 0, 910, 0, 100 ) ;
+  int porcentaje = map(valor, 0, 685, 0, 100 ) ;
   
 
   // Limpia el LCD
@@ -36,10 +36,13 @@ void loop() {
 
   // Muestra el porcentaje en el LCD
   lcd.print("Potenciometro: ");
+  Serial.print("Potenciometro: ");
   lcd.setCursor(0, 1);
   lcd.print(porcentaje);
+  Serial.print(porcentaje);
   lcd.print("%");
-  
+  Serial.println("%");
+
   // Espera un poco antes de la próxima lectura
   delay(50);
 }
