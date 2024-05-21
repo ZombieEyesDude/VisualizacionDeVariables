@@ -20,7 +20,7 @@ void setup() {
 
   // Imprimimos "Hola Mundo" en la primera fila
   lcd.setCursor(0, 0);
-  lcd.print("Hola Mundo!!!");
+  lcd.print("HOLA");
 }
 
 void loop() {
